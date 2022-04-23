@@ -9,7 +9,7 @@ const meli_categories = 'https://api.mercadolibre.com/categories/';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const whitelist= ['http://localhost:8080', 'https://feligx.github.io'];
+const whitelist= ['http://localhost:8080', 'https://feligx.github.io', 'https://guruko.co'];
 const options = {
     origin: function(origin, callback){
         if(whitelist.includes(origin) || !origin){
